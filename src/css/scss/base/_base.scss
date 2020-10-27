@@ -1,0 +1,67 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: $Font-size;
+  font-family: $Family; 
+}
+a{
+  text-decoration: none;
+  color:inherit;
+  cursor: pointer;
+}
+img{
+  max-width: 100%;
+}
+ul{ 
+  list-style-type: none;
+}
+body{
+  text-align: center;
+}
+
+p{
+  padding: 1rem 0;
+  font-size:1.2rem;
+}
+
+.container{ 
+  padding: 1.25rem 1.15rem;
+  max-width: 1180px;
+  margin: 0rem  auto;  
+}
+
+.bg-underlay{
+  position:absolute;
+  background-color: $Soft-Blue;
+  z-index:-1;
+}
+.bg-underlay--header{
+  height: 40%;
+  width: 60%;
+  bottom: 55%;
+  right:0;  
+  border-top-left-radius:50% ;  
+  border-bottom-left-radius: 50%;
+  @include mQ_desktop{
+    height: 70%;
+    width: 40%;
+    bottom :0;
+  }
+}
+.bg-underlay--features{
+  height: 25%;
+  width: 65%;
+  bottom: 30%;
+  left:0;  
+  border-top-right-radius:50% ;
+  border-bottom-right-radius: 50%; 
+   @include mQ_desktop{
+    height: 45%;
+    width: 45%;
+    bottom :0;
+   }
+}

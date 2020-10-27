@@ -1,0 +1,13 @@
+// cta banner
+.cta-banner {
+  padding: 1rem 0;
+  background: $Soft-Blue;
+  color: white;
+  @include section-heading;
+  &__headline {
+    color: white;
+  }
+  &__supporting-copy {
+    color: white;
+  }
+}

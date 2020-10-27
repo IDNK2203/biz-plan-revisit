@@ -1,0 +1,72 @@
+// mixins
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin section-heading {
+  &__heading {
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__headline {
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop {
+    &__headline {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+}
+
+@mixin grid($cols) {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat($cols, 1fr);
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin mQ_mobile_large {
+  @media screen and (min-width: map-get($map:$breakpoints , $key:small )) {
+    @content;
+  }
+}
+
+@mixin mQ_mobile_only {
+  @media screen and (max-width: map-get($map:$breakpoints , $key:medium )) {
+    @content;
+  }
+}
+
+@mixin mQ_desktop {
+  @media screen and (min-width: map-get($map:$breakpoints , $key:medium )) {
+    @content;
+  }
+}
+
+@mixin mQ_desktop_large {
+  @media screen and (min-width: map-get($map:$breakpoints , $key:large )) {
+    @content;
+  }
+}

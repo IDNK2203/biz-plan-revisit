@@ -1,0 +1,97 @@
+// HERO SECTION
+.main {
+  position: relative;
+  margin-bottom: 4rem;
+  &__illustration {
+    // background: url("../../../images/bg-dots.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__headline {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop {
+    .container {
+      @include flex;
+      align-items: flex-start;
+      padding-bottom: 4rem;
+      flex-direction: row-reverse;
+      & > * {
+        flex: 1 1 50%;
+      }
+    }
+    &__intro-text {
+      text-align: left;
+      max-width: 28rem;
+    }
+    &__headline {
+      font-size: 2.7rem;
+      padding: 2rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+}
+.cta-holder {
+  margin: 1rem 0;
+  @include flex;
+  justify-content: center;
+  @include mQ_desktop {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    padding: 1rem 0.25rem;
+    border-radius: 6px;
+    flex: 1 1 2.5rem;
+    max-width: 10rem;
+    margin: 0 0.25rem;
+    text-align: center;
+  }
+}
+
+.features {
+  position: relative;
+  @include section-heading;
+  .cta-holder {
+    justify-content: center;
+  }
+  @include mQ_desktop {
+    .cta-holder {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.faq {
+  padding: 1rem 0 2rem;
+  @include section-heading;
+  .cta-holder {
+    justify-content: center;
+    .btn {
+      padding: 1rem;
+    }
+  }
+}
+.extension {
+  padding-top: 0;
+  .container {
+    padding-top: 0;
+    max-width: 860px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @include section-heading;
+  .container {
+    padding: 1.5rem;
+    padding: 1.25rem 1.15rem;
+  }
+}
