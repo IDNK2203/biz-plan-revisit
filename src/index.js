@@ -1,3 +1,4 @@
+
 let nav = document.querySelector(".nav");
 let menu__icon__open = document.querySelector(".menu-icon__open");
 let menu__icon__close = document.querySelector(".menu-icon__close");
@@ -56,43 +57,6 @@ let reset_accordion_item = (answer_attr) => {
     icon_.firstElementChild.classList.remove("rotate_icon");
   });
 };
-
-// FORM VALIDATION
-let newsletter_form = document.querySelector(".newsletter-form");
-let form__input = document.querySelector(".newsletter-form__input");
-
-newsletter_form.addEventListener("submit", (e) => {
-  if (!form__input.validity.valid) {
-    check_input_validity(form__input);
-  } else {
-    fetch_shorten_url();
-  }
-  e.preventDefault();
-});
-
-let check_input_validity = (field) => {
-  let validity_value = field.validity.valid;
-  let err_msg = field.parentElement.children[1];
-  if (field.validity.valueMissing) {
-    err_msg.textContent = `Please add a ${field.name}`;
-  } else if (field.validity.typeMismatch) {
-    err_msg.textContent = "Please input a valid email";
-  }
-
-  function display_err(value) {
-    if (!value) {
-      err_msg.style.display = "block";
-    } else {
-      err_msg.style.display = "none";
-    }
-  }
-  display_err(validity_value);
-};
-
-form__input.addEventListener("input", (e) => {
-  check_input_validity(e.target);
-});
-
 // TAB FUNCTIONALITY
 
 let tab_item = Array.from(document.querySelectorAll(".tab__item > *"));
@@ -119,3 +83,57 @@ let hide_all = () => {
     item.classList.remove("active");
   });
 };
+
+// contact form
+// hooks
+let trial_form = document.querySelector(".contact-us-form");
+let trial_form_input = Array.from(
+  document.querySelectorAll(".contact-us-form__input")
+);
+let err_msg = Array.from(
+  document.querySelectorAll(".contact-us-form__err-msg")
+);
+
+let textarea = document.querySelector(".contact-us-form__input--textarea");
+
+console.log(trial_form, trial_form_input, err_msg ,textarea);
+
+textarea.value = "";
+trial_form.addEventListener("submit", (e) => {
+  trial_form_input.forEach((input) => {
+    if (!input.validity.valid) {
+      e.preventDefault();
+      check_input_validity(input);
+    }
+  });
+});
+
+let check_input_validity = (field) => {
+  let validity_value = field.validity.valid;
+  let err_msg = field.parentElement.children[3];
+  if (field.validity.valueMissing) {
+    err_msg.textContent = `The field ${field.name} hasn't been filled yet`;
+  } else if (field.validity.tooShort) {
+    err_msg.textContent = `The feild ${field.name} should have at least ${field.minLength} characters; you have entered ${field.value.length}`;
+  } else if (field.validity.typeMismatch) {
+    err_msg.textContent = `The value entered in this field needs to be a ${field.type}`;
+  } else if (field.validity.patternMismatch) {
+    err_msg.textContent =
+      "the set password value is not consistent with check password value";
+  }
+
+  function display_err(value) {
+    if (!value) {
+      err_msg.style.display = "block";
+    } else {
+      err_msg.style.display = "none";
+    }
+  }
+  display_err(validity_value);
+};
+
+trial_form_input.forEach((input) => {
+  input.addEventListener("input", () => {
+    check_input_validity(input);
+  });
+});

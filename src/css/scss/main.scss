@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
+// 3rd party styles
+// Required Core Stylesheet
+@import "../../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "../../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 // base style
 @import "./base/variables";
 
@@ -14,6 +21,10 @@
 
 @import "./components/sloping-cards";
 
+@import "./components/cards-benefit";
+
+@import "./components/testimonials";
+
 @import "./components/button";
 
 @import "./components/tabs";
@@ -23,9 +34,11 @@
 // layout styles
 @import "./layout/layout";
 
+@import "./layout/team";
+
 @import "./layout/header";
 
-@import "./layout/cta-banner" ;
+@import "./layout/cta-banner";
 
-@import "./layout/footer" ;
+@import "./layout/footer";
 

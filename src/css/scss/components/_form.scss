@@ -1,68 +1,141 @@
-.newsletter-form{
+// .newsletter-form {
+//   padding: 1rem;
+//   border-radius: 6px;
+//   &__item {
+//     position: relative;
+//   }
+//   &__input {
+//     position: relative;
+//     width: 100%;
+//     font-size: 0.9rem;
+//     padding: 0.85rem 1rem;
+//     padding-right: 3rem;
+//     border-top-left-radius: 6px;
+//     border-top-right-radius: 6px;
+//     border-bottom-right-radius: 0;
+//     border-bottom-left-radius: 0;
+//     border: none;
+//     font-weight: 400;
+//     // color:$Dark-Violet;
+//     &::placeholder {
+//       font-weight: 400;
+//     }
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+//   &__err-msg {
+//     bottom: -1rem;
+//     font-size: 0.7rem;
+//     font-weight: 400;
+//     background-color: $Soft-Red;
+//     color: white;
+//     text-align: left;
+//     display: none;
+//     width: 100%;
+//     border-top-left-radius: 0px;
+//     border-top-right-radius: 0px;
+//     border-bottom-right-radius: 6px;
+//     border-bottom-left-radius: 6px;
+//     padding: 0.5rem 0.5rem;
+//     @include mQ_desktop {
+//       position: absolute;
+//       left: 0;
+//       bottom: -15px;
+//     }
+//   }
+//   &__input:focus:invalid {
+//     border: 4px solid $Soft-Red;
+//   }
+//   .btn--accent {
+//     width: 100%;
+//     padding: 0.9rem 1rem;
+//   }
+//   @include mQ_desktop {
+//     padding: 0rem 0 2rem;
+//     @include flex;
+//     max-width: 30rem;
+//     justify-content: center;
+//     margin: 0 auto;
+//     &__item {
+//       flex: 0.75 1;
+//       margin-right: 1rem;
+//     }
+//     .btn {
+//       width: auto;
+//     }
+//   }
+// }
+.form-container {
+  width: 100%;
+}
+.contact-us-form {
   padding: 1rem;
-  border-radius: 6px; 
-  &__item{
-    position :relative;
-  }
-  &__input{
+
+  border-radius: 6px;
+  background: transparent;
+  &__item {
+    margin: 1rem 0;
     position: relative;
-    width: 100%;
-    font-size:.9rem ;
-    padding:.85rem 1rem ;
-    padding-right: 3rem;
-    border-top-left-radius: 6px;
-    border-top-right-radius:6px ;
-    border-bottom-right-radius:0 ;
-    border-bottom-left-radius:0;
-    border:none;
-    font-weight: 400;
-    // color:$Dark-Violet;
-    &::placeholder{
-      font-weight: 400;
-    }
-    &:focus{
-      outline: none;
-    }
-  }
-    &__err-msg{
-    bottom:-1rem;
-    font-size: .7rem;
-    font-weight: 400;
-    background-color: $Soft-Red;
-    color:white;
     text-align: left;
+  }
+  &__input {
+    appearance: none;
+    background: transparent;
+    width: 100%;
+    padding: 0.85rem 0;
+    padding-right: 3rem;
+    border: none;
+    border-bottom: 2px solid white;
+    font-weight: 700;
+    font-family: inherit;
+    color: white;
+    &::placeholder {
+      font-weight: 700;
+      font-family: inherit;
+      color: rgb(211, 211, 211);
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $Dark-Blue;
+    }
+  }
+  &__err-msg {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: $Red;
+    text-align: right;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+  }
+  &__indicator {
+    position: absolute;
+    top: 32.5px;
+    right: 10px;
     display: none;
-    width: 100%;
-    border-top-left-radius: 0px;
-    border-top-right-radius:0px ;
-    border-bottom-right-radius:6px ;
-    border-bottom-left-radius:6px;
-    padding: .5rem .5rem ;
-    @include mQ_desktop{
-      position:absolute;
-      left:0; 
-      bottom:-15px;
+  }
+  &__input:focus:invalid {
+    border-bottom: 2px solid $Red;
+    & ~ .contact-us-form__indicator {
+      display: block;
     }
   }
-  &__input:focus:invalid{
-    border:4px solid $Soft-Red; 
-  }
-  .btn--accent {
+  .btn {
     width: 100%;
-    padding: .9rem 1rem;
   }
-  @include mQ_desktop{
-    padding: 0rem 0 2rem;
-    @include flex;
-    max-width: 30rem;
-    justify-content: center;
-    margin: 0 auto;
-    &__item{
-      flex: .75 1;
-      margin-right: 1rem;  
+  @include mQ_desktop {
+    border-radius: 10px;
+    padding: 2rem;
+    &__item {
+      margin: 1.35rem 0;
     }
-    .btn{
-      width: auto;
-    } 
+    &__input {
+      padding: 1rem;
+      font-weight: 700;
+    }
   }
+}
+
+label {
+  padding: 0.5rem 0;
 }

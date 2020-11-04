@@ -1,15 +1,17 @@
 {
-  "name": "parcel_medium",
+  "name": "biz-plan-revisit",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build  src/*.html --public-url ./"
-  },
+    },
+  "keywords": [],
   "author": "idnk",
   "license": "MIT",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "parcel-bundler": "^1.12.4"
   }
 }

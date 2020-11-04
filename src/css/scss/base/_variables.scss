@@ -2,6 +2,18 @@
 
 // ## Colors
 
+// contact form colors
+
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+
+// Accent
+$Blue: hsl(248, 32%, 49%);
+
+// Neutral
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+
 // ### Primary
 
 $Soft-Blue: hsl(231, 69%, 60%);
@@ -20,12 +32,11 @@ $Font-size: 18px;
 
 // ### Fonts
 
-$Family:'Rubik', sans-serif;
+$Family: "Rubik", sans-serif;
 // $Weights: 400, 500;
 
-
 $breakpoints: (
-  'small': 550px,
-  'medium': 768px,
-  'large': 1024px,
+  "small": 550px,
+  "medium": 768px,
+  "large": 1024px,
 ) !default;

@@ -1,0 +1,36 @@
+.glide {
+  // background-color: $Grayish-Blue;
+  &__sub-headline {
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+  }
+  @include mQ_desktop {
+    &__sub-headline {
+      font-size: 1.5rem;
+      padding: 0;
+      // color: white;
+      color: $Very-Dark-Blue;
+      font-weight: 500;
+    }
+  }
+  &__quote {
+    font-size: 0.9rem;
+    // color: white;
+    color: $Very-Dark-Blue;
+    line-height: 1.6;
+  }
+  &__slide {
+    position: relative;
+    border-radius: 12px;
+    // background-color: $Soft-Blue;
+    background-color: #b3e5fc;
+    margin: 4rem 0;
+    padding: 4rem 0 1rem;
+  }
+  .img-con {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -75px;
+  }
+}

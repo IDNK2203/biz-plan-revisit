@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>contact us section</title>
+    <title>Frontend Mentor | Bookmark landing page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <meta
@@ -21,7 +21,6 @@
 
     <meta property="og:url" content="https://bookmark-ldp.netlify.app" />
     <meta property="og:image" content="./images/favicon-32x32.png" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="" />
@@ -50,6 +49,9 @@
             <li class="nav__item">
               <a href="contact.html" class="nav__link">Contact</a>
             </li>
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__link btn btn--accent">Login</a>
+            </li> -->
           </ul>
           <ul class="nav__list nav__list--socials">
             <li class="nav__item">
@@ -73,6 +75,9 @@
             <li class="nav__item">
               <a href="contact.html" class="nav__link">Contact</a>
             </li>
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__link btn btn--accent">Login</a>
+            </li> -->
           </ul>
         </nav>
         <div class="menu-icons">
@@ -111,89 +116,78 @@
       <div class="bg-underlay bg-underlay--header"></div>
     </main>
 
-    <!-- CONTACT-US-SECTION -->
-
-    <section class="contact-us-section" id="contact-section">
+    <!-- TEAM-BANNER-SECTION -->
+    <section class="cta-banner">
       <div class="container">
-        <div class="contact">
-          <div class="contact__intro-text">
-            <h2 class="contact__h2">Let's talk</h2>
-            <p class="contact__p">Ask us anything or just say hi</p>
-          </div>
-          <div class="contact__methods">
-            <p class="contact__method">
-              <i class="fas fa-phone"></i
-              ><a href="tel:+2348060571697">+234-806-0571-697</a>
-            </p>
-            <p class="contact__method">
-              <i class="far fa-envelope"></i>
-              <a href="mailto:efeidukpaye@gmail.com">efeidukpaye@gmail.com</a>
-            </p>
-            <p class="contact__method">
-              <i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. recusandae quod omnis.
-            </p>
-          </div>
+        <div class="cta-banner__heading">
+          <p class="cta-banner__supporting-copy">35,000+ already joined</p>
+          <h2 class="cta-banner__headline">
+            Stay up-to-date with what we’re doing
+          </h2>
         </div>
-        <div class="form-container">
-          <form
-            novalidate
-            name="contact"
-            method="POST"
-            class="contact-us-form"
-            action="https://usebasin.com/f/bcc105083549"
-          >
-            <p class="contact-us-form__item">
-              <label for="full-name"> full-name</label>
-              <input
-                class="contact-us-form__input"
-                required
-                type="text"
-                id="full-name"
-                name="full-name"
-                placeholder="full-name"
-              />
-              <span class="contact-us-form__indicator">
-                <img src="./images/icon-error.svg " alt="error-icon"
-              /></span>
-              <small class="contact-us-form__err-msg"></small>
-            </p>
-            <p class="contact-us-form__item">
-              <label for="email"> email</label>
-              <input
-                class="contact-us-form__input"
-                required
-                type="email"
-                id="email"
-                name="_replyto"
-                placeholder="Email Address"
-              />
-              <span class="contact-us-form__indicator">
-                <img src="./images/icon-error.svg" alt="error-icon"
-              /></span>
-              <small class="contact-us-form__err-msg"></small>
-            </p>
-            <p class="contact-us-form__item">
-              <label for="meassage">message</label>
-              <textarea
-                class="contact-us-form__input contact-us-form__input--textarea"
-                required="true"
-                placeholder="what on your mind"
-                rows="5"
-                name="message"
-                id="message"
-              >
-              </textarea>
-              <span class="contact-us-form__indicator">
-                <img src="./images/icon-error.svg" alt="error-icon"
-              /></span>
-              <small class="contact-us-form__err-msg"></small>
-            </p>
-            <button type="submit" class="btn btn--primary">
-              send<i class="far fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
+      </div>
+    </section>
+
+    <!-- TEAM-SECTION -->
+    <section id="members" class="members">
+      <div class="container">
+        <ul class="members__list">
+          <li class="members__item">
+            <div class="img-holder">
+              <div class="img-holder--inner">
+                <img src="./images/team/eghosa.png" alt="Idukpaye Eghosa" />
+              </div>
+            </div>
+            <div class="members__info">
+              <h3 class="members__name">Eghosa Idukpaye</h3>
+              <h4 class="members__role">Director</h4>
+              <div class="members__description">
+                <p>
+                  Eghosa Idukpaye joined Afribank Nigeria Plc in Dec 1993. He
+                  spent over fourteen years in commercial & retail banking
+                  operations. As the Head of Banking Systems Support department
+                  in Afribank, he managed the department for 5years with
+                  responsibility for maintaining customer’s user-experience on
+                  the ERP platform across 250 branches.
+                </p>
+                <p>
+                  He moved to Neptune Software Plc in November 2008 as Senior
+                  Business Consultant and In 2011 he joined the management team
+                  of Activedge Technologies Ltd. Eghosa is the current Vice
+                  President of New Haven Cooperative Multipurpose Society Ltd
+                  Lagos.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="members__item">
+            <div class="img-holder">
+              <div class="img-holder--inner">
+                <img src="./images/team/eghosa.png" alt="Idukpaye Eghosa" />
+              </div>
+            </div>
+            <div class="members__info">
+              <h3 class="members__name">Osawaru Idukpaye</h3>
+              <h4 class="members__role">Director</h4>
+              <div class="members__description">
+                <p>
+                  Osawaru Idukpaye AAT, is a member of both the Association of
+                  Accountancy Body in West Africa (ABWA) and the Institute of
+                  Chartered Accountant of Nigeria. He is currently awaiting his
+                  professional certification as a chartered accountant.
+                </p>
+                <p>
+                  He has good knowledge and experience in the application of the
+                  International Financial Reporting Standards (IFRS) and
+                  International Accounting Standard (IAS). He provides training
+                  & consultancy in accounting and business management to small
+                  and micro enterprises in the areas of preparation, analysis
+                  and interpretation of financial records.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -207,7 +201,9 @@
           </h2>
         </div>
         <div class="cta-holder">
-          <a href="#" class="btn btn--accent">More Info</a>
+          <a href="./contact.html#contact-section" class="btn btn--accent"
+            >More Info</a
+          >
         </div>
       </div>
     </section>
