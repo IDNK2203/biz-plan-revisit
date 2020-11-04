@@ -9,23 +9,26 @@
       font-size: 1.5rem;
       padding: 0;
       // color: white;
-      color: $Very-Dark-Blue;
+      color: white;
       font-weight: 500;
     }
   }
   &__quote {
     font-size: 0.9rem;
     // color: white;
-    color: $Very-Dark-Blue;
+    color: white;
     line-height: 1.6;
   }
   &__slide {
     position: relative;
     border-radius: 12px;
     // background-color: $Soft-Blue;
-    background-color: #b3e5fc;
+    background-color: $Very-Dark-Blue;
     margin: 4rem 0;
     padding: 4rem 0 1rem;
+  }
+  &__arrow{
+    top:40%;
   }
   .img-con {
     position: absolute;

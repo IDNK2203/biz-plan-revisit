@@ -2,28 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Frontend Mentor | Bookmark landing page</title>
+    <title>Kptplans | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <meta
       name="description"
-      content="Bookmark is the online service platform that helps users bookmark 
-    their important webpages more efficiently
+      content="We make business planning and management easy for micro and small
+      enterprises.
     "
     />
-    <meta property="og:title" content="Bookmark landing page" />
+    <meta property="og:title" content="Kptplans" />
     <meta property="og:type" content="website" />
     <meta
       name="og:description"
-      content="Bookmark is the online service platform that helps users bookmark 
-    their important webpages more efficiently"
+      content=" We make business planning and management easy for micro and small
+      enterprises."
     />
 
     <meta property="og:url" content="https://bookmark-ldp.netlify.app" />
-    <meta property="og:image" content="./images/favicon-32x32.png" />
+    <meta property="og:image" content="./images/favicon_io/favicon-32x32.png" />
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest" />
 
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
     <script
       defer
       src="https://kit.fontawesome.com/3c76e6d008.js"
@@ -36,7 +42,7 @@
     <header class="header">
       <div class="container">
         <div class="logo-holder">
-          <img src="./images/logo-bookmark.svg" alt="bookmark brand logo" />
+          <img src="./images/logo/logo-default.svg" alt="bookmark brand logo" />
         </div>
         <nav class="nav nav--mobile hidden">
           <ul class="nav__list">
@@ -95,19 +101,25 @@
       <div class="container">
         <div class="main__illustration">
           <img
-            src="./images/illustration-hero.svg"
+            src="./images/index_hero.svg"
             alt="illustration of a person working"
           />
         </div>
         <div class="main__intro-text">
-          <h1 class="main__headline">A Simple Bookmark Manager</h1>
+          <h1 class="main__headline">Lets plan it !</h1>
           <p class="main__supporting-copy">
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
+            We make business planning and management easy for micro and small
+            enterprises.
+          </p>
+          <p class="main__supporting-copy">
+            plans which include financial projections to attract investors and
+            lenders towards the successful beginning and sustainance of the
+            business venture.
           </p>
           <div class="cta-holder">
-            <a href="#" class="btn btn--primary"> Get it on Chrome</a>
+            <a href="./contact.html#contact-section" class="btn btn--primary"
+              >contact us</a
+            >
             <!-- <a href="#" class="btn btn--secondary">Get it on Firefox</a> -->
           </div>
         </div>
@@ -119,77 +131,85 @@
       <div class="bg-underlay bg-underlay--features"></div>
       <div class="container">
         <div class="features__heading">
-          <h2 class="features__headline">Features</h2>
+          <h2 class="features__headline">Our services</h2>
           <p class="features__supporting-copy">
-            Our aim is to make it quick and easy for you to access your
-            favourite websites. Your bookmarks sync between your devices so you
-            can access them on the go.
+            Business Plan Preparation , Business proposal writing and Accounting
+            for SMEs .
           </p>
         </div>
         <div class="tab">
           <ul class="tab__list">
             <li class="tab__item" data-tab="1">
               <button class="btn btn--tab tab__links">
-                Simple Bookmarking
+                Business Plan Preparation
               </button>
             </li>
             <li class="tab__item" data-tab="2">
               <button class="btn btn--tab tab__links active">
-                Speedy Searching
+                Business proposal writing
               </button>
             </li>
             <li class="tab__item" data-tab="3">
-              <button class="btn btn--tab tab__links">Easy Sharing</button>
+              <button class="btn btn--tab tab__links">Accounting</button>
             </li>
           </ul>
           <ul class="tab__content-list">
             <li class="tab__content-item hide" id="tab_1">
               <div class="tab__content-illustration">
                 <img
-                  src="./images/illustration-features-tab-1.svg"
+                  src="./images/business_plan_tab1.svg"
                   alt="illustration of bookmarks"
                 />
               </div>
               <div class="tab__content-intro-text">
-                <h2 class="tab__content-headline">Bookmark in one click</h2>
+                <h2 class="tab__content-headline">Business Plan Preparation</h2>
                 <p class="tab__content-supporting-copy">
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manage your favourite sites.
+                  A well-written business plan is an important tool because it
+                  gives entrepreneurs the ability to lay out their goals and
+                  track their progress as their business begins to grow.
                 </p>
-
+                <p class="tab__content-supporting-copy">
+                  Business plans are also important for attracting investors so
+                  they can determine if your business in on the right path and
+                  worth putting money into
+                </p>
               </div>
             </li>
             <li class="tab__content-item" id="tab_2">
               <div class="tab__content-illustration">
                 <img
-                  src="./images/illustration-features-tab-2.svg"
+                  src="./images/business_proposal_tab2.svg"
                   alt="illustration of a magnifing glass"
                 />
               </div>
               <div class="tab__content-intro-text">
-                <h2 class="tab__content-headline">Intelligent search</h2>
+                <h2 class="tab__content-headline">Business proposal writing</h2>
                 <p class="tab__content-supporting-copy">
-                  Our powerful search feature will help you find saved sites in
-                  no time at all. No need to trawl through all of your
-                  bookmarks.
+                  We offer solutions and advise on how to start and operate a
+                  small business. We provide essential management skills like
+                  how to prepare a business plan, financial records and
+                  interpretation of Cashflow, profit & loss and balance sheet..
                 </p>
-
               </div>
             </li>
             <li class="tab__content-item hide" id="tab_3">
               <div class="tab__content-illustration">
                 <img
-                  src="./images/illustration-features-tab-3.svg"
+                  src="./images/accountant_tab3.png"
                   alt="illustration of bookmark sharing"
                 />
               </div>
               <div class="tab__content-intro-text">
-                <h2 class="tab__content-headline">Share your bookmarks</h2>
+                <h2 class="tab__content-headline">Accounting</h2>
                 <p class="tab__content-supporting-copy">
-                  Easily share your bookmarks and collections with others.
-                  Create a shareable link that you can send at the click of a
-                  button.
+                  Small and micro business owners are often busy trying to
+                  deliver the best-quality service and products, leaving them
+                  less time and resources to maintain their finances and
+                  accounting records.
+                </p>
+                <p class="tab__content-supporting-copy">
+                  we assist therefore by providing bookkeeping and accounting
+                  services for our clients.
                 </p>
               </div>
             </li>
@@ -201,7 +221,7 @@
     <section class="benefits">
       <div class="container">
         <div class="benefits__heading">
-          <h2 class="benefits__headline">Download the benefits</h2>
+          <h2 class="benefits__headline">Benefits of Business Plans</h2>
           <p class="benefits__supporting-copy">
             We’ve got more browsers in the pipeline. Please do let us know if
             you’ve got a favourite you’d like us to prioritize.
@@ -209,7 +229,9 @@
         </div>
         <ul class="benefits__list">
           <li class="benefits__item">
-            <h3 class="benefits__sub-headline">To raise money for your business</h3>
+            <h3 class="benefits__sub-headline">
+              To raise money for your business
+            </h3>
             <p class="benefits__supporting-copy">
               Potential investors or lenders want a written business plan before
               they give you money. A mere description of your business concept
@@ -273,7 +295,10 @@
               <li class="glide__slide">
                 <article class="flex_column flex">
                   <div class="img-con">
-                    <img src="./images/testimonials/avatar-ali.png" alt="avatar_image" />
+                    <img
+                      src="./images/testimonials/avatar-ali.png"
+                      alt="avatar_image"
+                    />
                   </div>
                   <h3 class="glide__sub-headline">Mike Ali</h3>
                   <div class="glide__quote-container">
@@ -288,7 +313,10 @@
               <li class="glide__slide">
                 <article class="flex_column flex">
                   <div class="img-con">
-                    <img src="./images/testimonials/avatar-anisha.png" alt="avatar_image" />
+                    <img
+                      src="./images/testimonials/avatar-anisha.png"
+                      alt="avatar_image"
+                    />
                   </div>
                   <h3 class="glide__sub-headline">Ali anisha</h3>
                   <div class="glide__quote-container">
@@ -303,7 +331,10 @@
               <li class="glide__slide">
                 <article class="flex_column flex">
                   <div class="img-con">
-                    <img src="./images/testimonials/avatar-richard.png" alt="avatar_image" />
+                    <img
+                      src="./images/testimonials/avatar-richard.png"
+                      alt="avatar_image"
+                    />
                   </div>
                   <h3 class="glide__sub-headline">Mike richard</h3>
                   <div class="glide__quote-container">
@@ -318,7 +349,10 @@
               <li class="glide__slide">
                 <article class="flex_column flex">
                   <div class="img-con">
-                    <img src="./images/testimonials/avatar-shanai.png" alt="avatar_image" />
+                    <img
+                      src="./images/testimonials/avatar-shanai.png"
+                      alt="avatar_image"
+                    />
                   </div>
                   <h3 class="glide__sub-headline">Mike shanai</h3>
                   <div class="glide__quote-container">
@@ -434,47 +468,33 @@
     <section class="cta-banner">
       <div class="container">
         <div class="cta-banner__heading">
-          <p class="cta-banner__supporting-copy">35,000+ already joined</p>
           <h2 class="cta-banner__headline">
             Stay up-to-date with what we’re doing
           </h2>
         </div>
         <div class="cta-holder">
-          <a href="./contact.html#contact-section" class="btn btn--accent">More Info</a>
+          <a href="./contact.html#contact-section" class="btn btn--accent"
+            >contact us</a
+          >
         </div>
       </div>
     </section>
     <!-- FOOTER-SECTION -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer">
         <div class="logo-holder">
-          <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" fill-rule="evenodd">
-              <path
-                d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
-                fill="#FFF"
-                fill-rule="nonzero"
-              />
-              <g>
-                <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
-                <path
-                  d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
-                  fill="#FFF"
-                />
-              </g>
-            </g>
-          </svg>
+          <img src="./images/logo/logo-white.svg" alt="bookmark brand logo" />
         </div>
         <nav class="nav nav--secondary">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
+              <a href="./index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
+              <a href="./team.html" class="nav__link">Team</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
+              <a href="./contact.html" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -489,8 +509,11 @@
           </li>
         </ul>
       </div>
+      <div class="container container--copy-right">
+        <small>&copy; Copyright 2020, Kptplans</small>
+      </div>
     </footer>
   </body>
   <script src="./index.js"></script>
-    <script src="./testimonials.js"></script>
+  <script src="./testimonials.js"></script>
 </html>
