@@ -19,22 +19,37 @@
       enterprises."
     />
 
-    <meta property="og:url" content="https://bookmark-ldp.netlify.app" />
-    <meta property="og:image" content="./images/favicon_io/favicon-32x32.png" />
-    <link rel="manifest" href="./images/favicon_io/site.webmanifest" />
+    <meta property="og:url" content="https://kptplans.com" />
+    <meta property="og:image" content="./favicon-32x32.png" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon_io/favicon-32x32.png"
+      href="./favicon-32x32.png"
     />
     <script
       defer
       src="https://kit.fontawesome.com/3c76e6d008.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CT86XYM625"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CT86XYM625");
+    </script>
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
@@ -42,7 +57,12 @@
     <header class="header">
       <div class="container">
         <div class="logo-holder">
-          <img src="./images/logo/logo-default.svg" alt="bookmark brand logo" />
+          <a href="index.html" class="nav__link">
+            <img
+              src="./images/logo/logo-default.svg"
+              alt="kptplans brand logo"
+            />
+          </a>
         </div>
         <nav class="nav nav--mobile hidden">
           <ul class="nav__list">
@@ -106,15 +126,15 @@
           />
         </div>
         <div class="main__intro-text">
-          <h1 class="main__headline">Lets plan it !</h1>
+          <h1 class="main__headline">Let's plan it !</h1>
           <p class="main__supporting-copy">
             We make business planning and management easy for micro and small
             enterprises.
           </p>
           <p class="main__supporting-copy">
-            plans which include financial projections to attract investors and
-            lenders towards the successful beginning and sustainance of the
-            business venture.
+            Our business plans includes financial projections which attracts
+            investors and lenders towards the successful beginning and
+            sustainance of your business venture.
           </p>
           <div class="cta-holder">
             <a href="./contact.html#contact-section" class="btn btn--primary"
@@ -133,8 +153,8 @@
         <div class="features__heading">
           <h2 class="features__headline">Our services</h2>
           <p class="features__supporting-copy">
-            Business Plan Preparation , Business proposal writing and Accounting
-            for SMEs .
+            Business plan preparation , Business proposal writing and Accounting
+            services for MSMEs .
           </p>
         </div>
         <div class="tab">
@@ -158,7 +178,7 @@
               <div class="tab__content-illustration">
                 <img
                   src="./images/business_plan_tab1.svg"
-                  alt="illustration of bookmarks"
+                  alt="illustration of financial chart"
                 />
               </div>
               <div class="tab__content-intro-text">
@@ -169,9 +189,16 @@
                   track their progress as their business begins to grow.
                 </p>
                 <p class="tab__content-supporting-copy">
-                  Business plans are also important for attracting investors so
+                  We help buisnesses to prepare their buisness plans across many
+                  business sectors of the market.
+
+                  <!-- We offer solutions and advise on how to start and operate a
+                  small business. We provide essential management skills like
+                  how to prepare a business plan, financial records and
+                  interpretation of Cashflow, profit & loss and balance sheet. -->
+                  <!-- Business plans are also important for attracting investors so
                   they can determine if your business in on the right path and
-                  worth putting money into
+                  worth putting money into -->
                 </p>
               </div>
             </li>
@@ -179,16 +206,15 @@
               <div class="tab__content-illustration">
                 <img
                   src="./images/business_proposal_tab2.svg"
-                  alt="illustration of a magnifing glass"
+                  alt="illustration of a financial chart"
                 />
               </div>
               <div class="tab__content-intro-text">
                 <h2 class="tab__content-headline">Business proposal writing</h2>
                 <p class="tab__content-supporting-copy">
-                  We offer solutions and advise on how to start and operate a
-                  small business. We provide essential management skills like
-                  how to prepare a business plan, financial records and
-                  interpretation of Cashflow, profit & loss and balance sheet..
+                  We help buisness and individuals write their buisness
+                  proposals .This is to helps them project strenght and
+                  understanding of the jobs they seek with high success rate.
                 </p>
               </div>
             </li>
@@ -196,7 +222,7 @@
               <div class="tab__content-illustration">
                 <img
                   src="./images/accountant_tab3.png"
-                  alt="illustration of bookmark sharing"
+                  alt="illustration of a woman using a calculator"
                 />
               </div>
               <div class="tab__content-intro-text">
@@ -208,8 +234,8 @@
                   accounting records.
                 </p>
                 <p class="tab__content-supporting-copy">
-                  we assist therefore by providing bookkeeping and accounting
-                  services for our clients.
+                  We assist our MSME clients by providing bookkeeping and
+                  accounting services.
                 </p>
               </div>
             </li>
@@ -223,8 +249,8 @@
         <div class="benefits__heading">
           <h2 class="benefits__headline">Benefits of Business Plans</h2>
           <p class="benefits__supporting-copy">
-            We’ve got more browsers in the pipeline. Please do let us know if
-            you’ve got a favourite you’d like us to prioritize.
+            We believe business planning is absolutely essential to business
+            owners investors and lenders
           </p>
         </div>
         <ul class="benefits__list">
@@ -281,11 +307,13 @@
     <section class="testimonials">
       <div class="container">
         <div class="testimonials__heading">
-          <h2 class="testimonials__headline">Download the testimonials</h2>
-          <p class="testimonials__supporting-copy">
+          <h2 class="testimonials__headline">
+            What our clients are saying about us
+          </h2>
+          <!-- <p class="testimonials__supporting-copy">
             We’ve got more browsers in the pipeline. Please do let us know if
             you’ve got a favourite you’d like us to prioritize.
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="container--glide">
@@ -294,72 +322,35 @@
             <ul class="glide__slides">
               <li class="glide__slide">
                 <article class="flex_column flex">
-                  <div class="img-con">
+                  <!-- <div class="img-con">
                     <img
                       src="./images/testimonials/avatar-ali.png"
                       alt="avatar_image"
                     />
-                  </div>
-                  <h3 class="glide__sub-headline">Mike Ali</h3>
+                  </div> -->
+                  <h3 class="glide__sub-headline">Victor Obasogie</h3>
                   <div class="glide__quote-container">
                     <p class="glide__quote">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Itaque obcaecati ut sequi sint optio. Nesciio. Nesuntio.
-                      Nes fugiat veniam ipsa reprehenderit quas.
+                      " We requested for a business for an event planning
+                      business. They delivered to us in 10days with Excellent
+                      results "
                     </p>
                   </div>
                 </article>
               </li>
               <li class="glide__slide">
                 <article class="flex_column flex">
-                  <div class="img-con">
+                  <!-- <div class="img-con">
                     <img
                       src="./images/testimonials/avatar-anisha.png"
                       alt="avatar_image"
                     />
-                  </div>
-                  <h3 class="glide__sub-headline">Ali anisha</h3>
+                  </div> -->
+                  <h3 class="glide__sub-headline">Josephine Peters</h3>
                   <div class="glide__quote-container">
                     <p class="glide__quote">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Itaque obcaecati ut sequi sint optio. Nesciunt fugiat
-                      veniam ipsa reprehenderit quas.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="glide__slide">
-                <article class="flex_column flex">
-                  <div class="img-con">
-                    <img
-                      src="./images/testimonials/avatar-richard.png"
-                      alt="avatar_image"
-                    />
-                  </div>
-                  <h3 class="glide__sub-headline">Mike richard</h3>
-                  <div class="glide__quote-container">
-                    <p class="glide__quote">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Itaque obcaecati ut sequi sint optio. Nesciunt fugiat
-                      veniam ipsa reprehenderit quas.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="glide__slide">
-                <article class="flex_column flex">
-                  <div class="img-con">
-                    <img
-                      src="./images/testimonials/avatar-shanai.png"
-                      alt="avatar_image"
-                    />
-                  </div>
-                  <h3 class="glide__sub-headline">Mike shanai</h3>
-                  <div class="glide__quote-container">
-                    <p class="glide__quote">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Itaque obcaecati ut sequi sint optio. Nesciunt fugiat
-                      veniam ipsa reprehenderit quas.
+                      " working with kptplans was interesting. They handled us
+                      with professionalism "
                     </p>
                   </div>
                 </article>
@@ -377,8 +368,8 @@
           <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
-            <button class="glide__bullet" data-glide-dir="=2"></button>
-            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <!-- <button class="glide__bullet" data-glide-dir="=2"></button> -->
+            <!-- <button class="glide__bullet" data-glide-dir="=3"></button> -->
           </div>
         </div>
       </div>
@@ -397,70 +388,33 @@
           <ul class="faqs-accordion__list">
             <li class="faqs-accordion__item">
               <div class="faqs-accordion__question">
-                <p class="faqs-accordion__question-text">What is Bookmark?</p>
+                <p class="faqs-accordion__question-text">
+                  How do I get started ?
+                </p>
                 <span class="faqs-accordion__collaspe-icon">
                   <img src="./images/icon-arrow.svg" alt="arrow icon" />
                 </span>
               </div>
               <div class="faqs-accordion__answer" data-number=" answer-1">
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                tincidunt justo eget ultricies fringilla. Phasellus blandit
-                ipsum quis quam ornare mattis.
+                Give us a call or email us and we can set up a meeting .
               </div>
             </li>
             <li class="faqs-accordion__item">
               <div class="faqs-accordion__question">
                 <p class="faqs-accordion__question-text">
-                  How can I request a new browser?
+                  What information do I need to provide ?
                 </p>
                 <span class="faqs-accordion__collaspe-icon">
                   <img src=" ./images/icon-arrow.svg" alt="arrow icon " />
                 </span>
               </div>
               <div class="faqs-accordion__answer" data-number=" answer-2">
-                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
-                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
-                luctus eros aliquet convallis ultricies. Mauris augue massa,
-                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
-                aliquet convallis ultricies. Mauris augue massa, ultricies non
-                ligula. Suspendisse imperdiet.
-              </div>
-            </li>
-            <li class="faqs-accordion__item">
-              <div class="faqs-accordion__question">
-                <p class="faqs-accordion__question-text">
-                  Is there a mobile app?
-                </p>
-                <span class="faqs-accordion__collaspe-icon">
-                  <img src=" ./images/icon-arrow.svg" alt="arrow icon" />
-                </span>
-              </div>
-              <div class="faqs-accordion__answer" data-number=" answer-3">
-                Sed consectetur quam id neque fermentum accumsan. Praesent
-                luctus vestibulum dolor, ut condimentum urna vulputate eget.
-                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
-                Sed sollicitudin ex et ultricies bibendum.
-              </div>
-            </li>
-            <li class="faqs-accordion__item">
-              <div class="faqs-accordion__question">
-                <p class="faqs-accordion__question-text">
-                  What about other Chromium browsers?
-                </p>
-                <span class="faqs-accordion__collaspe-icon">
-                  <img src=" ./images/icon-arrow.svg" alt="arrow icon" />
-                </span>
-              </div>
-              <div class="faqs-accordion__answer" data-number=" answer-4">
-                Integer condimentum ipsum id imperdiet finibus. Vivamus in
-                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
-                gravida pellentesque non ut velit.
+                The infomation we will need to get started are , your type of
+                business, your investment size in NGN and your business
+                location.
               </div>
             </li>
           </ul>
-          <!-- <div class="cta-holder">
-            <a href="#" class="btn btn--primary">More Info</a>
-          </div> -->
         </div>
       </div>
     </section>
@@ -483,7 +437,9 @@
     <footer class="footer">
       <div class="container footer">
         <div class="logo-holder">
-          <img src="./images/logo/logo-white.svg" alt="bookmark brand logo" />
+          <a href="index.html" class="nav__link">
+            <img src="./images/logo/logo-white.svg" alt="kptplans brand logo" />
+          </a>
         </div>
         <nav class="nav nav--secondary">
           <ul class="nav__list">

@@ -1,26 +1,26 @@
-.tab{
-  .btn--tab{
-    color:$Grayish-Blue;
-    background:transparent;
+.tab {
+  .btn--tab {
+    color: $Grayish-Blue;
+    background: transparent;
     box-shadow: 0 0 0;
     border-radius: 0;
   }
-  &__list{
+  &__list {
     padding: 1rem 0;
   }
-  &__item{ 
-    margin: .25rem 0;
-    padding-top: .25rem; 
+  &__item {
+    margin: 0.25rem 0;
+    padding-top: 0.25rem;
     text-align: center;
     border-bottom: 1px solid $Grayish-Blue;
-    &:first-child{
+    &:first-child {
       border-top: 1px solid $Grayish-Blue;
     }
   }
-  &__content-list{
+  &__content-list {
     margin: 2rem 0 3rem;
   }
-  &__content-headline{
+  &__content-headline {
     font-weight: 500;
     padding: 1rem 0;
     color: $Very-Dark-Blue;
@@ -29,10 +29,11 @@
     color: $Grayish-Blue;
     font-size: 0.9rem;
     line-height: 1.6;
+    padding: 0.5rem 0;
   }
 
   @include mQ_desktop {
-    &__list{ 
+    &__list {
       border-bottom: 1px solid $Grayish-Blue;
       @include flex;
       max-width: 50rem;
@@ -40,17 +41,17 @@
       padding: 0;
       justify-content: center;
     }
-    &__item{ 
+    &__item {
       margin: 0;
-      padding: .25rem 1rem  0px; 
-      border:none;
-      &:first-child{
+      padding: 0.25rem 1rem 0px;
+      border: none;
+      &:first-child {
         border-top: none;
       }
     }
-    .btn--tab{
+    .btn--tab {
       padding: 1.5rem 1rem;
-      font-weight:400;
+      font-weight: 400;
       font-size: 1.05rem;
     }
     &__content-intro-text {
@@ -65,7 +66,7 @@
     &__content-supporting-copy {
       font-size: 1.05rem;
     }
-    &__content-item{
+    &__content-item {
       @include flex;
       align-items: flex-start;
       padding: 2rem 0 2rem;
@@ -74,17 +75,21 @@
         flex: 1 1 50%;
       }
     }
-  } 
-  &__content-item{
-    animation: fadeEffect 1s; 
+  }
+  &__content-item {
+    animation: fadeEffect 1s;
   }
 }
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.active{
+.active {
   border-bottom: 3px solid red;
 }

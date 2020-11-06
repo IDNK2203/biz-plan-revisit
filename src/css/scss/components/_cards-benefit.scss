@@ -1,39 +1,43 @@
-.benefits{
-  &__list{
+.benefits {
+  &__list {
     margin: 1rem 0;
-    @include mQ_desktop{
+    @include mQ_desktop {
       @include grid(2);
     }
-  }  
-   &__item{
+  }
+  &__item {
     max-width: 500px;
-    margin:0 auto;
-    @include mQ_desktop{
-    text-align: left;      
+    margin: 0 auto;
+    @include mQ_desktop {
+      text-align: left;
     }
   }
+
   &__sub-headline {
     font-weight: 500;
     color: $Very-Dark-Blue;
     position: relative;
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       width: 16px;
       height: 16px;
-      left: -2rem;
+      left: -1 rem;
       top: 6px;
       z-index: 1;
       border-radius: 0px 8px 8px 0px;
       background-color: $Soft-Red;
     }
-
-    @include mQ_desktop {
-      &__sub-headline {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-        font-weight: 500;
+  }
+  @include mQ_desktop {
+    &__sub-headline {
+      // font-size: 1.5rem;
+      // padding: 1rem 0;
+      // font-weight: 500;
+      &::before {
+        left: -2rem;
+        // top: 26px;
       }
-    }  
-  }  
+    }
+  }
 }

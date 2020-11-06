@@ -11,7 +11,7 @@
       enterprises.
     "
     />
-    <meta property="og:title" content="Kptplans"/>
+    <meta property="og:title" content="Kptplans" />
     <meta property="og:type" content="website" />
     <meta
       name="og:description"
@@ -19,17 +19,38 @@
       enterprises."
     />
 
-    <meta property="og:url" content="https://bookmark-ldp.netlify.app" />
-    <meta property="og:image" content="./images/favicon_io/favicon-32x32.png" />
-    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+    <meta property="og:url" content="https://kptplans.com" />
+    <meta property="og:image" content="./favicon-32x32.png" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script
       defer
       src="https://kit.fontawesome.com/3c76e6d008.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CT86XYM625"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CT86XYM625");
+    </script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
@@ -37,7 +58,12 @@
     <header class="header">
       <div class="container">
         <div class="logo-holder">
-          <img src="./images/logo/logo-default.svg" alt="bookmark brand logo" />
+          <a href="index.html" class="nav__link">
+            <img
+              src="./images/logo/logo-default.svg"
+              alt="kptplans brand logo"
+            />
+          </a>
         </div>
         <nav class="nav nav--mobile hidden">
           <ul class="nav__list">
@@ -92,22 +118,17 @@
         <div class="main__illustration">
           <img
             src="./images/contact_us_hero.svg"
-            alt="illustration of a person working"
+            alt="illustration of a phone and an envelope"
           />
         </div>
         <div class="main__intro-text">
           <h1 class="main__headline">Contact Us Today</h1>
           <p class="main__supporting-copy">
-            Email us for any question you may have or inquiries.we would be
+            Email us for any question you may have or inquiries. We would be
             happy to answer your question and set up a meeting with you.
           </p>
-          <!-- <p class="main__supporting-copy">
-            Let's talk Ask us anything or just say hi
-          </p> -->
-          <div class="cta-holder">
-            <!-- <a href="#" class="btn btn--primary"> Get it on Chrome</a> -->
-            <!-- <a href="#" class="btn btn--secondary">Get it on Firefox</a> -->
-          </div>
+
+          <div class="cta-holder"></div>
         </div>
       </div>
       <div class="bg-underlay bg-underlay--header"></div>
@@ -120,7 +141,9 @@
         <div class="contact">
           <div class="contact__intro-text">
             <h2 class="contact__h2">Get a quote</h2>
-            <p class="contact__p">Fil up the form and our team will get back to you within 24hours.</p>
+            <p class="contact__p">
+              Fil up the form and our team will get back to you within 24hours.
+            </p>
           </div>
           <div class="contact__methods">
             <p class="contact__method">
@@ -129,12 +152,8 @@
             </p>
             <p class="contact__method">
               <i class="far fa-envelope"></i>
-              <a href="mailto:efeidukpaye@gmail.com">efeidukpaye@gmail.com</a>
+              <a href="mailto:info@kptplans.com">info@kptplans.com</a>
             </p>
-            <!-- <p class="contact__method">
-              <i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. recusandae quod omnis.
-            </p> -->
           </div>
         </div>
         <div class="form-container">
@@ -143,7 +162,7 @@
             name="contact"
             method="POST"
             class="contact-us-form"
-            action="https://usebasin.com/f/bcc105083549"
+            action="https://usebasin.com/f/8ecd5973e1b8"
           >
             <p class="contact-us-form__item">
               <label for="full-name"> full-name</label>
@@ -191,33 +210,23 @@
               /></span>
               <small class="contact-us-form__err-msg"></small>
             </p>
-            <button type="submit" class="btn 
-            btn--accent">
+            <button type="submit" class="btn btn--accent">
               send<i class="far fa-paper-plane"></i>
             </button>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"
+            ></div>
           </form>
         </div>
       </div>
     </section>
-
-    <!-- CTA-BANNER-SECTION -->
-    <!-- <section class="cta-banner">
-      <div class="container">
-        <div class="cta-banner__heading">
-          <h2 class="cta-banner__headline">
-            Stay up-to-date with what we’re doing
-          </h2>
-        </div>
-        <div class="cta-holder">
-          <a href="#" class="btn btn--accent">contact us</a>
-        </div>
-      </div>
-    </section> -->
-    <!-- FOOTER-SECTION -->
     <footer class="footer">
       <div class="container">
         <div class="logo-holder">
-          <img src="./images/logo/logo-white.svg" alt="bookmark brand logo" />
+          <a href="index.html" class="nav__link">
+            <img src="./images/logo/logo-white.svg" alt="kptplans brand logo" />
+          </a>
         </div>
         <nav class="nav nav--secondary">
           <ul class="nav__list">
@@ -244,9 +253,10 @@
         </ul>
       </div>
       <div class="container container--copy-right">
-        <small>&copy; Copyright 2020, Kptplans</small> 
+        <small>&copy; Copyright 2020, Kptplans</small>
       </div>
     </footer>
   </body>
   <script src="./index.js"></script>
+  <script src="./contact.js"></script>
 </html>

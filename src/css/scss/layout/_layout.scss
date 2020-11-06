@@ -99,19 +99,11 @@
 // contact page styles
 .contact-us-section {
   background: #325bd1;
-  // url(../../images/bg-intro-mobile.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  // height: 100%;
   color: white;
   text-align: left;
-
   padding: 1rem 0 2rem;
   @include mQ_desktop {
     background: #325bd1;
-    // url(../../images/bg-intro-desktop.png);
-    // height: 100vh;
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -122,10 +114,23 @@
       }
     }
   }
+  .btn {
+    margin-bottom: 1rem;
+  }
+  @include mQ_mobile_very_small_only {
+    .container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .contact-us-form {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 .contact {
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   margin: 1rem 0;
   max-width: 20rem;
   &__h2 {

@@ -19,22 +19,36 @@
       enterprises."
     />
 
-    <meta property="og:url" content="https://bookmark-ldp.netlify.app" />
-    <meta property="og:image" content="./images/favicon_io/favicon-32x32.png" />
-    <link rel="manifest" href="./images/favicon_io/site.webmanifest" />
+    <meta property="og:url" content="https://kptplans.com" />
+    <meta property="og:image" content="./favicon-32x32.png" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon_io/favicon-32x32.png"
+      href="./favicon-32x32.png"
     />
     <script
       defer
       src="https://kit.fontawesome.com/3c76e6d008.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CT86XYM625"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CT86XYM625");
+    </script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
@@ -42,7 +56,12 @@
     <header class="header">
       <div class="container">
         <div class="logo-holder">
-          <img src="./images/logo/logo-default.svg" alt="bookmark brand logo" />
+          <a href="index.html" class="nav__link">
+            <img
+              src="./images/logo/logo-default.svg"
+              alt="kptplans brand logo"
+            />
+          </a>
         </div>
         <nav class="nav nav--mobile hidden">
           <ul class="nav__list">
@@ -103,7 +122,7 @@
         <div class="main__illustration">
           <img
             src="./images/team_hero.svg"
-            alt="illustration of a person working"
+            alt="illustration of a team members"
           />
         </div>
         <div class="main__intro-text">
@@ -170,7 +189,10 @@
           <li class="members__item">
             <div class="img-holder">
               <div class="img-holder--inner">
-                <img src="./images/team/eghosa.png" alt="Idukpaye Eghosa" />
+                <img
+                  src="./images/team/osawaru-idukpaye.jpg"
+                  alt="Osawaru Idukpaye"
+                />
               </div>
             </div>
             <div class="members__info">
@@ -217,7 +239,9 @@
     <footer class="footer">
       <div class="container">
         <div class="logo-holder">
-          <img src="./images/logo/logo-white.svg" alt="bookmark brand logo" />
+          <a href="index.html" class="nav__link">
+            <img src="./images/logo/logo-white.svg" alt="kptplans brand logo" />
+          </a>
         </div>
         <nav class="nav nav--secondary">
           <ul class="nav__list">

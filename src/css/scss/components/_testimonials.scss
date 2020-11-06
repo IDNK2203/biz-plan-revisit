@@ -2,7 +2,7 @@
   // background-color: $Grayish-Blue;
   &__sub-headline {
     font-weight: 500;
-    color: $Very-Dark-Blue;
+    color: white;
   }
   @include mQ_desktop {
     &__sub-headline {
@@ -14,26 +14,42 @@
     }
   }
   &__quote {
-    font-size: 0.9rem;
-    // color: white;
-    color: white;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #cad6e2;
+    line-height: 1.5;
+    word-spacing: 0.1rem;
+    font-style: italic;
+    @include mQ_desktop {
+      font-size: 1.2rem;
+    }
   }
   &__slide {
     position: relative;
-    border-radius: 12px;
-    // background-color: $Soft-Blue;
+    height: auto;
     background-color: $Very-Dark-Blue;
-    margin: 4rem 0;
+    margin: 1rem 0 3rem;
     padding: 4rem 0 1rem;
   }
-  &__arrow{
-    top:40%;
+  &__arrow {
+    top: 30%;
   }
   .img-con {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -75px;
+  }
+  &__quote-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  @include mQ_mobile_very_small_only {
+    &__arrow--left {
+      left: 0.5rem;
+    }
+    &__arrow--right {
+      right: 0.5rem;
+    }
   }
 }

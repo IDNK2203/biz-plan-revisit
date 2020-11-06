@@ -1,13 +1,12 @@
 import Glide from "@glidejs/glide";
-// new Glide('.glide').mount()
+
 var glide = new Glide(".glide", {
   type: "carousel",
-  perView: 3,
-  focusAt: "center",
+  perView: 2,
+  autoplay: 4000,
+  animationDuration: 1500,
+  hoverpause: false,
   breakpoints: {
-    800: {
-      perView: 2,
-    },
     680: {
       perView: 1,
     },
