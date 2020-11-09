@@ -114,9 +114,7 @@
       }
     }
   }
-  .btn {
-    margin-bottom: 1rem;
-  }
+
   @include mQ_mobile_very_small_only {
     .container {
       padding-left: 0.5rem;
