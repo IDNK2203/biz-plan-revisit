@@ -75,6 +75,12 @@
         flex: 1 1 50%;
       }
     }
+    &__content-illustration {
+      margin-right: 2rem;
+      img {
+        border-radius: 1rem;
+      }
+    }
   }
   &__content-item {
     animation: fadeEffect 1s;

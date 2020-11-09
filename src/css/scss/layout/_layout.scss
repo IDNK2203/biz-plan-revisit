@@ -7,6 +7,9 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  &__illustration--team img {
+    border-radius: 50%;
+  }
   &__headline {
     font-weight: 500;
     font-size: 1.5rem;

@@ -716,6 +716,12 @@ p {
   .tab__content-item > * {
     flex: 1 1 50%;
   }
+  .tab__content-illustration {
+    margin-right: 2rem;
+  }
+  .tab__content-illustration img {
+    border-radius: 1rem;
+  }
 }
 
 .tab__content-item {
@@ -837,6 +843,10 @@ label {
 .main__illustration {
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.main__illustration--team img {
+  border-radius: 50%;
 }
 
 .main__headline {
