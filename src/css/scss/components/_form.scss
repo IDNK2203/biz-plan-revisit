@@ -3,30 +3,33 @@
 }
 .contact-us-form {
   padding: 1rem;
-
   border-radius: 6px;
   background: transparent;
+
   &__item {
-    margin: 1rem 0;
+    margin: 0rem 0;
     position: relative;
     text-align: left;
+    padding: 0.5rem 0;
   }
   &__input {
     font-size: 0.8rem;
     appearance: none;
-    background: transparent;
+    background: white;
     width: 100%;
     padding: 0.85rem 0;
+    margin: 0.5rem 0 1rem;
     padding-right: 3rem;
     border: none;
-    border-bottom: 2px solid white;
+    border: 2px solid white;
     font-weight: 400;
+    border-radius: 5px;
     font-family: inherit;
-    color: white;
+    color: $Very-Dark-Blue;
     &::placeholder {
       font-weight: 400;
       font-family: inherit;
-      color: rgb(211, 211, 211);
+      color: rgba(177, 176, 176, 0.781);
     }
     &:focus {
       outline: none;
@@ -39,16 +42,16 @@
     color: white;
     text-align: right;
     width: 100%;
-    padding: 0.5rem 0.5rem;
+    padding: 0rem 0.5rem;
   }
   &__indicator {
     position: absolute;
-    top: 32.5px;
+    top: 3.75rem;
     right: 10px;
     display: none;
   }
   &__input:focus:invalid {
-    border-bottom: 2px solid $Red;
+    border: 2px solid $Red;
     & ~ .contact-us-form__indicator {
       display: block;
     }
@@ -64,9 +67,9 @@
   @include mQ_desktop {
     border-radius: 10px;
     padding: 2rem;
-    &__item {
-      margin: 1.35rem 0;
-    }
+    // &__item {
+    //   // margin: 1.35rem 0;
+    // }
     &__input {
       padding: 1rem;
       font-size: 0.9rem;
@@ -75,5 +78,5 @@
 }
 
 label {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }

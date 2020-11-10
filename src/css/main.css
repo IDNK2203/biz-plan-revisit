@@ -341,7 +341,6 @@ p {
   }
   .nav--desktop .nav__item {
     padding-left: 1.5rem;
-    padding-bottom: 1.25rem;
     font-size: 1rem;
     color: #252b46;
   }
@@ -367,7 +366,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -503,7 +502,7 @@ p {
   content: "";
   width: 16px;
   height: 16px;
-  left: -1 rem;
+  left: -1rem;
   top: 6px;
   z-index: 1;
   border-radius: 0px 8px 8px 0px;
@@ -656,6 +655,10 @@ p {
   margin: 2rem 0 3rem;
 }
 
+.tab__content-list img {
+  border-radius: 1rem;
+}
+
 .tab__content-headline {
   font-weight: 500;
   padding: 1rem 0;
@@ -719,9 +722,6 @@ p {
   .tab__content-illustration {
     margin-right: 2rem;
   }
-  .tab__content-illustration img {
-    border-radius: 1rem;
-  }
 }
 
 .tab__content-item {
@@ -753,29 +753,32 @@ p {
 }
 
 .contact-us-form__item {
-  margin: 1rem 0;
+  margin: 0rem 0;
   position: relative;
   text-align: left;
+  padding: 0.5rem 0;
 }
 
 .contact-us-form__input {
   font-size: 0.8rem;
   appearance: none;
-  background: transparent;
+  background: white;
   width: 100%;
   padding: 0.85rem 0;
+  margin: 0.5rem 0 1rem;
   padding-right: 3rem;
   border: none;
-  border-bottom: 2px solid white;
+  border: 2px solid white;
   font-weight: 400;
+  border-radius: 5px;
   font-family: inherit;
-  color: white;
+  color: #252b46;
 }
 
 .contact-us-form__input::placeholder {
   font-weight: 400;
   font-family: inherit;
-  color: lightgray;
+  color: rgba(177, 176, 176, 0.781);
 }
 
 .contact-us-form__input:focus {
@@ -789,18 +792,18 @@ p {
   color: white;
   text-align: right;
   width: 100%;
-  padding: 0.5rem 0.5rem;
+  padding: 0rem 0.5rem;
 }
 
 .contact-us-form__indicator {
   position: absolute;
-  top: 32.5px;
+  top: 3.75rem;
   right: 10px;
   display: none;
 }
 
 .contact-us-form__input:focus:invalid {
-  border-bottom: 2px solid #ff7a7a;
+  border: 2px solid #ff7a7a;
 }
 
 .contact-us-form__input:focus:invalid ~ .contact-us-form__indicator {
@@ -822,9 +825,6 @@ p {
     border-radius: 10px;
     padding: 2rem;
   }
-  .contact-us-form__item {
-    margin: 1.35rem 0;
-  }
   .contact-us-form__input {
     padding: 1rem;
     font-size: 0.9rem;
@@ -832,7 +832,81 @@ p {
 }
 
 label {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
+}
+
+.main--home.main {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main--home.main .main__headline,
+.main--home.main .main__supporting-copy {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .main--home.main {
+    height: 85vh;
+  }
+  .main--home.main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .main--home.main .main__headline,
+  .main--home.main .main__supporting-copy {
+    color: white;
+  }
+}
+
+.main--home.main .btn--primary:hover {
+  color: white;
+}
+
+.main--home video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.main--home .container {
+  position: relative;
+  z-index: 2;
+  margin-top: 4rem;
+  color: white;
+}
+
+.main--home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .main--home {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
+  }
+  .main--home video {
+    display: none;
+  }
 }
 
 .main {
@@ -840,13 +914,8 @@ label {
   margin-bottom: 4rem;
 }
 
-.main__illustration {
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .main__illustration--team img {
-  border-radius: 50%;
+  border-radius: 15px;
 }
 
 .main__headline {
@@ -1036,16 +1105,13 @@ label {
 }
 
 .contact-us-section {
-  background: #325bd1;
+  background: #2035ac;
   color: white;
   text-align: left;
   padding: 1rem 0 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-us-section {
-    background: #325bd1;
-  }
   .contact-us-section .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1256,22 +1322,31 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 1.15rem;
 }
 
 .menu-icons {
   cursor: pointer;
   position: absolute;
   right: 1.5rem;
-  top: 2rem;
+  top: 1.2rem;
   font-size: 1.5rem;
   transition: opacity 0.5s linear;
-  z-index: 1;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
   .menu-icons {
     display: none;
   }
+}
+
+.header--home {
+  padding: 0;
+}
+
+.header--home .container {
+  padding: 0.75rem 1.15rem;
 }
 
 .fa-times {

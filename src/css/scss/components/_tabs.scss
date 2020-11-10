@@ -19,6 +19,9 @@
   }
   &__content-list {
     margin: 2rem 0 3rem;
+    img {
+      border-radius: 1rem;
+    }
   }
   &__content-headline {
     font-weight: 500;
@@ -77,9 +80,6 @@
     }
     &__content-illustration {
       margin-right: 2rem;
-      img {
-        border-radius: 1rem;
-      }
     }
   }
   &__content-item {

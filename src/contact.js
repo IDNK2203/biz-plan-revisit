@@ -10,8 +10,6 @@ let err_msg = Array.from(
 
 let textarea = document.querySelector(".contact-us-form__input--textarea");
 
-console.log(trial_form, trial_form_input, err_msg, textarea);
-
 textarea.value = "";
 trial_form.addEventListener("submit", (e) => {
   trial_form_input.forEach((input) => {
