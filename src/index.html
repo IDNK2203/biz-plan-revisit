@@ -20,12 +20,13 @@
     />
 
     <meta property="og:url" content="https://kptplans.com" />
-    <meta property="og:image" content="./favicon-32x32.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <meta
+      property="og:image"
+      content="https://kptplans.com/apple-touch-icon.png"
     />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="icon"
@@ -57,7 +58,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header header--home ">
       <div class="container">
         <div class="logo-holder">
           <a href="index.html" class="nav__link">
@@ -78,22 +79,14 @@
             <li class="nav__item">
               <a href="contact.html" class="nav__link">Contact</a>
             </li>
-            <!-- <li class="nav__item">
-              <a href="#" class="nav__link btn btn--accent">Login</a>
-            </li> -->
           </ul>
           <ul class="nav__list nav__list--socials">
             <li class="nav__item">
-              <a href="#" class="nav__link"
-                ><i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"><i class="fab fa-twitter"></i> </a>
+              <a href="https://twitter.com/eghenelson" class="nav__link"><i class="fab fa-twitter"></i> </a>
             </li>
           </ul>
         </nav>
-        <nav class="nav nav--desktop">
+        <nav class="nav nav--desktop ">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="index.html" class="nav__link">Home</a>
@@ -104,9 +97,6 @@
             <li class="nav__item">
               <a href="contact.html" class="nav__link">Contact</a>
             </li>
-            <!-- <li class="nav__item">
-              <a href="#" class="nav__link btn btn--accent">Login</a>
-            </li> -->
           </ul>
         </nav>
         <div class="menu-icons">
@@ -120,16 +110,22 @@
       </div>
     </header>
     <!-- MAIN/HERO-SECTION -->
-    <main class="main">
+    <main class="main main--home">
+      <div class="overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source
+          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+          type="video/mp4"
+        />
+      </video>
       <div class="container">
-        <div class="main__illustration">
-          <img
-            src="./images/index_hero.svg"
-            alt="illustration of a person working"
-          />
-        </div>
         <div class="main__intro-text">
-          <h1 class="main__headline">Let's plan it !</h1>
+          <h1 class="main__headline">Let's plan it for you !</h1>
           <p class="main__supporting-copy">
             We make business planning and management easy for micro and small
             enterprises.
@@ -143,12 +139,11 @@
             <a href="./contact.html#contact-section" class="btn btn--primary"
               >contact us</a
             >
-            <!-- <a href="#" class="btn btn--secondary">Get it on Firefox</a> -->
           </div>
         </div>
       </div>
-      <div class="bg-underlay bg-underlay--header"></div>
     </main>
+
     <!-- FEATURES-SECTION -->
     <section class="features">
       <div class="bg-underlay bg-underlay--features"></div>
@@ -194,14 +189,6 @@
                 <p class="tab__content-supporting-copy">
                   We help buisnesses to prepare their buisness plans across many
                   business sectors of the market.
-
-                  <!-- We offer solutions and advise on how to start and operate a
-                  small business. We provide essential management skills like
-                  how to prepare a business plan, financial records and
-                  interpretation of Cashflow, profit & loss and balance sheet. -->
-                  <!-- Business plans are also important for attracting investors so
-                  they can determine if your business in on the right path and
-                  worth putting money into -->
                 </p>
               </div>
             </li>
@@ -314,10 +301,6 @@
           <h2 class="testimonials__headline">
             What our clients are saying about us
           </h2>
-          <!-- <p class="testimonials__supporting-copy">
-            We’ve got more browsers in the pipeline. Please do let us know if
-            you’ve got a favourite you’d like us to prioritize.
-          </p> -->
         </div>
       </div>
       <div class="container--glide">
@@ -326,12 +309,6 @@
             <ul class="glide__slides">
               <li class="glide__slide">
                 <article class="flex_column flex">
-                  <!-- <div class="img-con">
-                    <img
-                      src="./images/testimonials/avatar-ali.png"
-                      alt="avatar_image"
-                    />
-                  </div> -->
                   <h3 class="glide__sub-headline">Victor Obasogie</h3>
                   <div class="glide__quote-container">
                     <p class="glide__quote">
@@ -344,12 +321,6 @@
               </li>
               <li class="glide__slide">
                 <article class="flex_column flex">
-                  <!-- <div class="img-con">
-                    <img
-                      src="./images/testimonials/avatar-anisha.png"
-                      alt="avatar_image"
-                    />
-                  </div> -->
                   <h3 class="glide__sub-headline">Josephine Peters</h3>
                   <div class="glide__quote-container">
                     <p class="glide__quote">
@@ -372,8 +343,6 @@
           <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
-            <!-- <button class="glide__bullet" data-glide-dir="=2"></button> -->
-            <!-- <button class="glide__bullet" data-glide-dir="=3"></button> -->
           </div>
         </div>
       </div>
@@ -460,12 +429,7 @@
         </nav>
         <ul class="nav__list nav__list--socals">
           <li class="nav__item">
-            <a href="#" class="nav__link"
-              ><i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link"><i class="fab fa-twitter"></i> </a>
+            <a href="https://twitter.com/eghenelson" class="nav__link"><i class="fab fa-twitter"></i> </a>
           </li>
         </ul>
       </div>
@@ -475,9 +439,5 @@
     </footer>
   </body>
   <script src="./index.js"></script>
-  <script
-    defer
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-  ></script>
   <script src="./testimonials.js"></script>
 </html>

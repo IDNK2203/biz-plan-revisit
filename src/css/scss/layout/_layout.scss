@@ -1,14 +1,83 @@
+// BACKGROUND VIDEO MAIN
+.main--home.main {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  .main__headline,
+  .main__supporting-copy {
+    color: white;
+  }
+  @include mQ_desktop {
+    height: 85vh;
+    .container {
+      @include flex;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+    .main__headline,
+    .main__supporting-copy {
+      color: white;
+    }
+  }
+  .btn--primary:hover {
+    color: white;
+  }
+}
+
+.main--home video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.main--home .container {
+  position: relative;
+  z-index: 2;
+  margin-top: 4rem;
+  color: white;
+}
+
+.main--home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .main--home {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+  .main--home video {
+    display: none;
+  }
+}
+
+// --------END----------------
+
 // HERO SECTION
 .main {
   position: relative;
   margin-bottom: 4rem;
-  &__illustration {
-    // background: url("../../../images/bg-dots.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
   &__illustration--team img {
-    border-radius: 50%;
+    border-radius: 15px;
   }
   &__headline {
     font-weight: 500;
@@ -101,12 +170,12 @@
 
 // contact page styles
 .contact-us-section {
-  background: #325bd1;
+  background: darken($color: $Soft-Blue, $amount: 20%);
   color: white;
   text-align: left;
   padding: 1rem 0 2rem;
   @include mQ_desktop {
-    background: #325bd1;
+    // background: #325bd1;
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
